@@ -1,0 +1,11 @@
+Analyze Your text
+Textutils gives you a way to analyze your text quickly and efficiently.
+Free to use Be it
+ word count, character count or
+TextUti1s is a free character counter tool that p vides instant character count & word count statistics for a given text. TextUti1s reports the number of words and c aracters. Thus it is suitable for writing text with word/ character
+limit.
+Browser Compatible
+This word counter software works in any web browsers such as Chrome, Firefox, Internet Explorer,Safari,Opera.It
+suits to count characters in facebook, blog, books, excel document, pdf document, essays, etc.
+
+
