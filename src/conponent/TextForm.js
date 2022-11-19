@@ -4,17 +4,17 @@ export default function TextForm(prpos) {
   const [text, setText] = useState("");
  
   let Changetext = (event) => {
-    console.log("change text function is called");
+    // console.log("change text function is called");
     setText(event.target.value);
   };
   let ChangetoUpCase = () => {
-    console.log("this function is called");
+    // console.log("this function is called");
     setText(text.toUpperCase());
     prpos.showalert("changed to uppercase" ,"Success")
   };
 
   let ChangetoLoCase = () => {
-    console.log("this function is called lo");
+    // console.log("this function is called lo");
     setText(text.toLowerCase());
     prpos.showalert("Changed to lowercasse" ,"Success")
   };
@@ -24,7 +24,7 @@ export default function TextForm(prpos) {
   };
   let ChangeSentenceCase = () => {
     let s = text.split(".")[0];
-    console.log(s);
+    // console.log(s);
     let new_s = s[0].toLowerCase + s.slice(1);
     let new_sen = new_s + text.split(".").slice(1);
     setText(new_sen);
@@ -38,10 +38,9 @@ export default function TextForm(prpos) {
   };
 
   const handleCopy = () => {
-    var text = document.getElementById("mybox");
-    text.select();
-    navigator.clipboard.writeText(text.value);
-    document.getSelection().removeAllRanges()
+  
+    navigator.clipboard.writeText(text);
+ 
     prpos.showalert("text is copyed" ,"Success")
   };
   const handleExtraSpaces = () => {
@@ -91,7 +90,7 @@ export default function TextForm(prpos) {
         <div className="container my-2">
           <h1>Your text summary</h1>
           <p>
-            {text.split(" ").filter((element)=>{ return element.length!==0}).length} word and {text.length} character
+            {text.split(/\s+/).filter((element)=>{ return element.length!==0}).length} word and {text.length} character
           </p>
           <p> {text.split(".").length - 1} number of paragraph </p>
           <p>{0.008 * text.split(" ").filter((element)=>{ return element.length!==0}).length} Minutes read</p>
