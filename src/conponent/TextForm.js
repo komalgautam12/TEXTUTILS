@@ -65,25 +65,25 @@ export default function TextForm(prpos) {
             rows="8"
           ></textarea>
         </div>
-        <button disabled={text.length==0} onClick={ChangetoUpCase} className="mx-2 my-2">
+        <button disabled={text.length===0} onClick={ChangetoUpCase} className="mx-2 my-2">
           UpperCase
         </button>
-        <button disabled={text.length==0} onClick={ChangetoLoCase} className="mx-2 my-2">
+        <button disabled={text.length===0} onClick={ChangetoLoCase} className="mx-2 my-2">
           LowerCase
         </button>
-        <button disabled={text.length==0} onClick={ClearTextarea} className="mx-2 my-2">
+        <button disabled={text.length===0} onClick={ClearTextarea} className="mx-2 my-2">
           Clear
         </button>
-        <button disabled={text.length==0} onClick={ChangeSentenceCase} className="mx-2 my-2">
+        <button disabled={text.length===0} onClick={ChangeSentenceCase} className="mx-2 my-2">
           Sentences Case
         </button>
-        <button type="submit" disabled={text.length==0} onClick={speak} className=" mx-2 my-2 ">
+        <button type="submit" disabled={text.length===0} onClick={speak} className=" mx-2 my-2 ">
           Speak
         </button>
-        <button disabled={text.length==0} onClick={handleCopy} className="mx-2 my-2">
+        <button disabled={text.length===0} onClick={handleCopy} className="mx-2 my-2">
           copy text
         </button>
-        <button disabled={text.length==0} onClick={handleExtraSpaces} className="mx-2 my-2">
+        <button disabled={text.length===0} onClick={handleExtraSpaces} className="mx-2 my-2">
           Remove Extra Spaces
         </button>
 
